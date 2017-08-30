@@ -1,0 +1,98 @@
+<!DOCTYPE html>	
+<html>
+<head>
+	<title>Weight Management</title>
+
+
+	<style>
+		button.accordion {
+
+		    background-color: #eee;
+		    color: #444;
+		    cursor: pointer;
+		    padding: 18px;
+		    width: 50%;
+		    border: none;
+		    text-align: center;
+		    outline: none;
+		    font-size: 15px;
+		    transition: 0.4s;
+		    font-weight: bold;
+		    font-style: italic;
+		    text-decoration: underline;
+		}
+
+		button.accordion.active, button.accordion:hover {
+		    background-color: #ddd;
+		}
+
+		div.panel {
+		    padding: 0 18px;
+		    background-color: white;
+		    max-height: 0;
+		    overflow: hidden;
+		    transition: max-height 0.2s ease-out;
+		    width: 50%
+		}
+	</style>
+
+
+</head>
+<!-- <body style="background-image: url('weight-loss.png');background-repeat: no-repeat;background-position: center;background-size: contain;"> -->
+<body background="weight-loss.png" style="background-size: cover;">
+<center>
+	<button class="accordion" style="background-color: #0937e5;color: white;">Why to lose weight?</button>
+	<div class="panel">
+	  <p>To look good!</p>
+	</div>
+</center>
+<br><br>
+<center>
+	<button class="accordion" style="background-color: #4286f4;color: #eaeeff;">How to lose weight?</button>
+	<div class="panel">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+	</div>
+</center>
+
+	<br><br>
+	<center>
+	<button class="accordion" style="background-color: #7caeff;color: #3f3535">Weight Loss v/s Fat Loss</button>
+	<div class="panel">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	</center>
+	<br><br>
+	<center>
+	<button class="accordion" style="background-color: #a0c4ff;color: #261f1f">Weight Gain v/s Muscle Gain</button>
+	<div class="panel">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+
+</center>
+<br><br>
+<center>
+	<button class="accordion" style="background-color: #c9ddfc;color: #111111">Benefits of weight management</button>
+	<div class="panel">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+</center>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].onclick = function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight){
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  }
+		}
+	</script>
+
+
+</body>
+</html>

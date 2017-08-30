@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weight Management </title>
+
+
+		<style>
+		button.hid {
+
+		    background-color: #eee;
+		    color: #444;
+		    cursor: pointer;
+		    padding: 18px;
+		    width: 25%;
+		    border: none;
+		    text-align: center;
+		    outline: none;
+		    font-size: 15px;
+		    transition: 0.4s;
+		    font-weight: bold;
+		    font-style: italic;
+		    text-decoration: underline;
+		}
+
+		div.appear {
+		    padding: 0 18px;
+		    background-color: white;
+		    visibility: hidden;
+		    
+		}
+
+
+	</style>
+
+</head>
+<body background="weight-loss.png" style="background-size: cover;padding-left: 50px;padding-right: 50px">
+<!-- <body background="weight-loss.png" style="background-size: cover;"> -->
+	
+	<div style="height:150px;width: 100%;color: blue;font-size: 50px;font-family: Comic Sans Ms;padding-top: 20px;font-weight: bold;text-align: center;">
+		Weight Management
+	</div>
+
+	<button class="hid" style="background-color: #0937e5;color: white;float: left;margin-top: 15px">Why to lose weight?</button>
+	<div class="appear" style="margin-left: 26%; height: 50px">
+	  <p>To look good!</p>
+	</div>
+	<br>
+
+	<button class="hid" style="background-color: #0937e5;color: white;float: right;margin-top: 15px;">How to lose weight?</button>
+	<div class="appear" style="margin-right: 26%; height: 50px;">
+	  <p>To look good!</p>
+	</div>
+	<br>
+
+	<button class="hid" style="background-color: #0937e5;color: white;float: left;margin-top: 15px">Weight Loss v/s Fat Loss</button>
+	<div class="appear" style="margin-left: 26%; height: 50px">
+	  <p>To look good!</p>
+	</div>
+	<br>
+
+	<button class="hid" style="background-color: #0937e5;color: white;float: right;margin-top: 15px;">Weight Gain v/s Muscle Gain</button>
+	<div class="appear" style="margin-right: 26%; height: 50px;">
+	  <p>To look good!</p>
+	</div>
+	<br>
+
+	<button class="hid" style="background-color: #0937e5;color: white;float: left;margin-top: 15px">Benefits of Weight Management</button>
+	<div class="appear" style="margin-left: 26%; height: 50px">
+	  <p>To look good!</p>
+	</div>
+	<br>
+	
+
+
+
+
+
+<script type="text/javascript">
+	
+	var butt=document.getElementsByClassName("hid");
+	var i;
+
+	
+	for (i = 0; i < butt.length; i++) 
+		{
+		  butt[i].onclick = function() 
+		  {
+		    // this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.visibility=="visible")
+		    {
+		      panel.style.visibility = "hidden";
+		    } else 
+		    {
+		      panel.style.visibility = "visible";
+		    } 
+		  }
+		}
+
+	
+
+
+
+</script>
+
+</body>
+</html>

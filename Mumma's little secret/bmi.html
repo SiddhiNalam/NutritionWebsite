@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate BMI</title>
+	<script type="text/javascript">
+		function click1()
+		{
+			var ht=document.getElementById("ht").value
+			ht=ht*ht
+			var wt=document.getElementById("wt").value
+			var bmi=wt/ht
+			document.getElementById("dispbmi").innerHTML=bmi
+		}
+	</script>
+</head>
+<body style="background-image: url('BMI-chart.png');background-repeat: no-repeat;background-position: center top;">
+
+<p style="font-family: Times New Roman; font-size: 50px;color: grey;text-align: center; background-blend-mode: screen;">
+
+</p>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<BR><br>
+<dir style="position: absolute;left: 350px">
+<form style="font-size: 20px;">
+
+	Weight in kg:
+	<input type="text" id="wt" name="weight">
+	<br><br>
+	
+	Height in mts:
+	<input type="text" id="ht" name="height">
+	<br><br>
+
+	<input type="button"  onClick="click1()" value="Calculate" />
+
+</form>
+</dir>
+
+	<p>
+	<span id="dispbmi" style="font-size: 30px;position:absolute;left: 750px;top: 480px"></span>
+	</p>
+
+</body>
+</html>

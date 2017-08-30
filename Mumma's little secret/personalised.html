@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personalised Diet</title>
+</head>
+<body>
+	<p style="font-family:Copperplate Gothic Bold; font-size: 30px;text-align: center; color:red ">
+		Please give some Information regarding yourself.
+	</p>
+
+	<br><br>
+
+	<form style="text-align: center;font-size: 22px;">
+		Full Name:  &nbsp  &nbsp
+		<input type="text" name="name" style="font-size: 18px"></input>
+		<br><br>
+		Email ID:  &nbsp  &nbsp
+		<input type="text" name="email" style="font-size: 18px"></input>
+		<br><br>
+		Contact Number:  &nbsp  &nbsp
+		<input type="text" name="num" style="font-size: 18px"></input>
+		<br><br>
+		Age:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<input type="number" min="0" name="age" style="font-size: 18px"></input>
+		<br><br>
+		Height(in cm):&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<input type="text" min="0" name="height" style="font-size: 18px"></input>
+		<br><br>
+		Weight(in kg):&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+		<input type="text" min="0" name="weight" style="font-size: 18px"></input>
+		<br><br>
+		Occupation:&nbsp &nbsp 
+		<input type="text" min="0" name="occupation" style="font-size: 18px"></input>
+		<br><br>
+		Weekly Exercise:<br><br>
+		<input type="radio" name="No" style="font-size: 18px"> No Exercise</input>
+		<input type="radio" name="Light" style="font-size: 18px"> 1-3 days</input>
+		<input type="radio" name="Medium" style="font-size: 18px"> 4-7 days</input>
+
+		<br><br>
+
+		Eating Habits:
+		<input type="radio" name="veg" style="font-size: 18px"> Vegetarian</input>
+		<input type="radio" name="nonveg" style="font-size: 18px"> Non-Vegetarian</input>
+		<input type="radio" name="egg" style="font-size: 18px"> Eggatarian</input>
+
+		<br><br>
+		Any Special Diet?
+		
+		<input type="button" onclick="diabetic()" value="Diabetic" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Pregnancy" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Healthy Gut" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Acidic" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Lactation(post pregnancy)" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Muscle Gain" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Weight Loss" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Anameia" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Bone Health" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Immunity Improvement" style="font-size: 22px"></input>
+		<input type="button" onclick="diabetic()" value="Heart Care" style="font-size: 22px"></input>
+
+
+
+
+
+
+
+
+
+		<br><br>
+		<input type="button" onclick="submit1()" value="Submit" style="font-size: 22px"></input>
+
+	</form>
+	<script type="text/javascript">
+		function submit1()
+		{
+			document.write("Are you a member<br>")
+			document.write('<input type="button" onclick="" value="yes" style="font-size: 22px">&nbsp</input>')
+			document.write('<input type="button" onclick="" value="no" style="font-size: 22px;" ></input>')
+		}
+
+		function diabetic()
+		{
+			document.write("Please answer these few more questions<br>")
+			document.write('Are you diabetic?')
+			document.write('<input type="radio" name="yes" style="font-size: 22px;" > Yes</input>')
+			document.write('<input type="radio" name="no" style="font-size: 22px;" > No</input>')
+		}
+	</script>
+</body>
+</html> 	
